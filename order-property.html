@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .flex-basis{
+            background-color:blue;
+        }
+        .flex-wrap{
+            background-color:brown;
+        }
+        .justify-content{
+            background-color: cadetblue;
+            order: -1;
+        }
+        .align-items{
+            background-color: chartreuse;
+            order: 1
+            ;
+        }
+        .align-content{
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Order of the boxes has been changed</h2>
+    <div class="container">
+        <div class="flex-basis box"><a href="./flex-basis.html">flex-basis</a></div>
+        <div class="flex-wrap box"><a href="./flex-wrap.html">flex-wrap</a></div>
+        <div class="justify-content box"><a href="./justify-content.html">justify-content</a></div>
+        <div class="align-items box"><a href="./align-items.html">align-items</a></div>
+        <div class="align-content box"><a href="./align-content.html">align-content</a></div>
+    </div>
+    <p>Every element has default order value of zero"0" <br> you can change it to negative or positive values <br> respectively.</p>
+</body>
+</html>

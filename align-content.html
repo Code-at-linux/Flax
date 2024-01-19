@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .flex-basis{
+            background-color:blue;
+        }
+        .order-property{
+            background-color: aquamarine;
+        }
+        .flex-wrap{
+            background-color:brown;
+        }
+        .align-items{
+            background-color: chartreuse;
+        }
+        .justify-content{
+            background-color: cadetblue;
+        }
+        .align-content{
+            margin-top: 50px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .box{
+            flex-basis: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-basis box"><a href="./flex-basis.html">flex-basis</a></div>
+        <div class="order-property box"><a href="./order-property.html">order-property</a></div>
+        <div class="flex-wrap box"><a href="./flex-wrap.html">flex-wrap</a></div>
+        <div class="align-items box"><a href="./align-items.html">align-items</a></div>
+        <div class="justify-content box"><a href="./justify-content.html">justify-content</a></div>
+    </div>
+    <h2>align-content only work when flex-wrap is set to wrap</h2>
+    <div class="align-content">
+        <div class="flex-basis box"><a href="./align-content/flex-start.html">flex-start</a></div>
+        <div class="order-property box"><a href="./align-content/flex-end.html">flex-end</a></div>
+        <div class="flex-wrap box"><a href="./align-content/center.html">center</a></div>
+    </div>
+</body>
+</html>

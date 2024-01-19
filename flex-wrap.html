@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .flex-basis{
+            background-color:blue;
+        }
+        .order-property{
+            background-color: aquamarine;
+        }
+        .justify-content{
+            background-color: cadetblue;
+        }
+        .align-items{
+            background-color: chartreuse;
+        }
+        .align-content{
+            background-color: darkolivegreen;
+        }
+        .box{
+            flex-basis: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>If you srink the size of the tab then the box will collapse.</h2>
+    <div class="container">
+        <div class="flex-basis box"><a href="./flex-basis.html">flex-basis</a></div>
+        <div class="order-property box"><a href="./order-property.html">order-property</a></div>
+        <div class="justify-content box"><a href="./justify-content.html">justify-content</a></div>
+        <div class="align-items box"><a href="./align-items.html">align-items</a></div>
+        <div class="align-content box"><a href="./align-content.html">align-content</a></div>
+    </div>
+</body>
+</html>
